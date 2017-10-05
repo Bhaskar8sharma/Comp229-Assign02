@@ -136,7 +136,7 @@ namespace Assignment_2 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmButton;
+        protected global::System.Web.UI.WebControls. confirmButton
         
         /// <summary>
         /// feedbackLabel control.

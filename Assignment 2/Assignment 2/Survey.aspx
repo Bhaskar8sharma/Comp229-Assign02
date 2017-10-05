@@ -71,7 +71,7 @@
             protected void Button1_Click(object sender, EventArgs e) {
     Response.Redirect("Thankyou.aspx");
 }
-            <:button id="confirmButton" onserverclick="confirmButton_click" runat="server" >Confirm</:button>
+            <asp: button id="confirmButton" onserverclick="confirmButton_click" runat="server"/> 
            
         </p>
         <p>
