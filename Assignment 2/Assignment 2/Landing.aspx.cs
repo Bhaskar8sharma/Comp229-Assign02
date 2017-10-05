@@ -14,6 +14,9 @@ namespace Assignment_2
 
         }
 
-      
+        protected void myLinkButon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

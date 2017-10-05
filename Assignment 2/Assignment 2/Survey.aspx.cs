@@ -13,9 +13,24 @@ namespace Assignment_2
         {
 
         }
-        public void ServerSubmit_Click(object sender, EventArgs e)
+       
+        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            
+        }
+        protected void confirmButton_Click(object sender, EventArgs e)
+        {
+            confirmButton.Text = "Clicked";
+            {
+                if ( Page.IsValid)
+                {
+                    confirmButton.Text = "Valid";
+                }
+                else
+                {
+                    confirmButton.Text = "Invalid!";
+                }
+            }
         }
     }
 }

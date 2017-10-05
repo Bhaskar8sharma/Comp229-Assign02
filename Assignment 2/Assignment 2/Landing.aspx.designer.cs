@@ -13,15 +13,6 @@ namespace Assignment_2 {
     public partial class WebForm2 {
         
         /// <summary>
-        /// logo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image logo;
-        
-        /// <summary>
         /// myLinkButon control.
         /// </summary>
         /// <remarks>
