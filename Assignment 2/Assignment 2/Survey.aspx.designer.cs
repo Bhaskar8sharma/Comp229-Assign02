@@ -49,13 +49,13 @@ namespace Assignment_2 {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl cnumber;
         
         /// <summary>
-        /// serverModel control.
+        /// preference control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect serverModel;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect preference;
         
         /// <summary>
         /// RadioButton1 control.
@@ -85,13 +85,58 @@ namespace Assignment_2 {
         protected global::System.Web.UI.WebControls.RadioButton RadioButton3;
         
         /// <summary>
+        /// satisfaction control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect satisfaction;
+        
+        /// <summary>
+        /// recommendation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect recommendation;
+        
+        /// <summary>
+        /// RadioButton4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton4;
+        
+        /// <summary>
+        /// RadioButton5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton5;
+        
+        /// <summary>
+        /// description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect description;
+        
+        /// <summary>
         /// confirmButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton confirmButton;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmButton;
         
         /// <summary>
         /// feedbackLabel control.
@@ -101,14 +146,5 @@ namespace Assignment_2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label feedbackLabel;
-        
-        /// <summary>
-        /// ServerSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ServerSubmit;
     }
 }
