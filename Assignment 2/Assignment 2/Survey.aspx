@@ -36,7 +36,7 @@
             1.Which out of the following do you prefer the most to eat?</p>
         <p>
             <br />
-            <select id="preference" runat="server" multiple="true" class="auto-style1" style="width: 152px; height: 104px">
+            <select id="preference" runat="server" multiple="true"  class="auto-style1" style="width: 152px; height: 104px">
                 <option>KFC</option>
                 <option>Popeyes</option>
                 <option>Mc Donalds</option>
@@ -53,19 +53,25 @@
         <p>
 
             2. How often do you visit the selected restaurant in a month?</p>
-        <p>
+         <p>
 
             <br />
             <asp:RadioButton  ID="visitation" GroupName="visits" runat="server" Text="This is my first visit" />
+            </p>
+         <p>
+
             <asp:RadioButton ID="RadioButton2" GroupName="visits" runat="server" Text="Once or twice" />
+            </p>
+         <p>
+
             <asp:RadioButton ID="RadioButton3" GroupName="visits" runat="server" Text="More than four times" />
           
-        </p>
-        <p>
-            <br />
-        </p>
-        <p>
-           3.Rate your satisfaction out of 5:</p>
+         </p>
+        <p style="margin-top: 19">
+            &nbsp;</p>
+         <p style="margin-top: 19">
+           3.Rate your satisfaction out of 5:<br />
+         </p>
         <p>
             <asp:CheckBox text="1." ID="CheckBox1" runat="server" />&nbsp
             <asp:CheckBox text="2." ID="CheckBox2" runat="server" />&nbsp
@@ -74,10 +80,7 @@
             <asp:CheckBox text="5." ID="CheckBox5" runat="server" />&nbsp
             
            &nbsp;&nbsp;&nbsp;
-          <%--  &nbsp&nbsp<asp:RequiredFieldValidator ID="satisfactionreq" runat="server"
-                ControlToValidate="satisfaction" 
-                ErrorMessage="please select!"/>
-            --%></p>
+          </p>
         <p>
            4.Would you recommend our restaurant to a friend?<br />&nbsp;&nbsp; <select id="recommendation" runat="server">
         <option>Yes</option>
@@ -97,7 +100,7 @@
         <p>
             &nbsp;</p>    
         <p>
-         <asp:button id="confirmButton" Text="Confirm" OnClick="confirmButton_Click" OnClientClick="window.open('Thankyou.aspx', 'Thankyou')" Runat="server" />
+         <asp:button id="confirmButton" Text="Confirm" OnClick="confirmButton_Click" OnClientClick="window.open('Thankyou.aspx', 'Thankyou')"  Runat="server" />
         </p>
         <p>
             <asp:Label runat="server" ID="feedbackLabel"/>
@@ -110,10 +113,9 @@
     <script runat="server">
         void confirmButton_click(Object s, EventArgs e){
             bool itemSelected = false;
-            feedbackLabel.Text = "Your name is: " + fname.Value +lname.Value + "<br/>";
+            
             feedbackLabel.Text += "Your email is: " + email.Value + "<br/>";
             feedbackLabel.Text += "Your preference: "+ preference.Value + "<br/>";
-            //feedbackLabel.Text += "Your satisfaction level: " + satisfaction.Value + "<br/>";
             feedbackLabel.Text += "would you recommend it: " + recommendation.Value + "<br/>";
             foreach(ListItem item in preference.Items)
             {
