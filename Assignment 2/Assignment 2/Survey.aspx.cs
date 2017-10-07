@@ -20,17 +20,8 @@ namespace Assignment_2
         }
         protected void confirmButton_Click(object sender, EventArgs e)
         {
-            confirmButton.Text = "Clicked";
-            {
-                if ( Page.IsValid)
-                {
-                    confirmButton.Text = "Valid";
-                }
-                else
-                {
-                    confirmButton.Text = "Invalid!";
-                }
-            }
+
         }
+        
     }
 }

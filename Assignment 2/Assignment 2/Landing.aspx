@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Landing.aspx.cs" Inherits="Assignment_2.WebForm2" %>
+﻿<%@ Page Title="Landing" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Landing.aspx.cs" Inherits="Assignment_2.WebForm2" %>
 <asp:Content ID="Content1"  ContentPlaceHolderID="MainContent" runat="server"><br />
   <div>
       <img src="logo.png" alt="Stallion surveys" style="height: 184px; width: 342px" />

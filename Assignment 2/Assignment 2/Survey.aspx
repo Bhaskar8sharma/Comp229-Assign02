@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Survey.aspx.cs" Inherits="Assignment_2.WebForm1" %>
+﻿<%@ Page Title="Survey" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Survey.aspx.cs" Inherits="Assignment_2.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div>
          <img src="logo.png" alt="Stallion surveys" style="height: 184px; width: 342px" />
@@ -20,7 +20,8 @@
         <p>
              &nbsp;</p>
         <p>
-            Email: <input type="text" id="email" runat="server" placeholder="xyz@abc.com" style="width: 170px; margin-left: 70px" />
+            Email: <input type="text" id="email" runat="server" 
+                placeholder="xyz@abc.com" style="width: 170px; margin-left: 70px" />
         <asp:RequiredFieldValidator ID="emailreq" runat="server"
                 ControlToValidate="email" 
                 ErrorMessage="Email is required!" ForeColor="Red" />
@@ -28,7 +29,9 @@
         <p>
             &nbsp;</p>
         <p>
-            Contact number: <input type="number" id="cnumber" runat="server" placeholder="555-555-5555" class="optional" text="(optional)" style="margin-left: 3px" />
+            Contact number: <input type="number" id="cnumber" runat="server" 
+                placeholder="555-555-5555" class="optional" text="(optional)" 
+                style="margin-left: 3px" />
         </p>
         <p>
             &nbsp;</p>
@@ -36,7 +39,8 @@
             1.Which out of the following do you prefer the most to eat?</p>
         <p>
             <br />
-            <select id="preference" runat="server" multiple="true"  class="auto-style1" style="width: 155px; height: 104px">
+            <select id="preference" runat="server" multiple="true" 
+                class="auto-style1" style="width: 155px; height: 104px">
                 <option>KFC</option>
                 <option>Popeyes</option>
                 <option>Mc Donalds</option>
@@ -56,15 +60,18 @@
          <p>
 
             <br />
-            <asp:RadioButton  ID="visitation" GroupName="visits" runat="server" Text="This is my first visit" />
+            <asp:RadioButton  ID="visitation" GroupName="visits" 
+                runat="server" Text="This is my first visit" />
             </p>
          <p>
 
-            <asp:RadioButton ID="RadioButton2" GroupName="visits" runat="server" Text="Once or twice" />
+            <asp:RadioButton ID="RadioButton2" GroupName="visits"
+                runat="server" Text="Once or twice" />
             </p>
          <p>
 
-            <asp:RadioButton ID="RadioButton3" GroupName="visits" runat="server" Text="More than four times" />
+            <asp:RadioButton ID="RadioButton3" GroupName="visits"
+                runat="server" Text="More than four times" />
           
          </p>
         <p style="margin-top: 20">
@@ -100,10 +107,7 @@
         <p>
             &nbsp;</p>    
         <p>
-         <asp:button id="confirmButton" Text="Confirm" OnClick="confirmButton_Click" OnClientClick="window.open('Thankyou.aspx', 'Thankyou')"  Runat="server" />
-        </p>
-        <p>
-            <asp:Label runat="server" ID="feedbackLabel"/>
+         <asp:button id="confirmButton" class="btn btn-default" Text="Confirm" OnClick="confirmButton_Click" OnClientClick="window.open('Thankyou.aspx', 'Thankyou')"  Runat="server" />
         </p>
     </div>
     <p>  <asp:ValidationSummary id="vSummary" runat="server" /> 

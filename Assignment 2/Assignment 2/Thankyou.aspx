@@ -25,11 +25,6 @@
       <p>
             <asp:Label runat="server" ID="feedbackLabel" />
         </p>
-   <h3>Your response:</h3>
-    <asp:Label ID="Label" runat="server" Text=""></asp:Label>
-    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-    <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
-    <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
-    <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+  
 
 </asp:Content>
