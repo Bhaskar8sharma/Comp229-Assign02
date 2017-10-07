@@ -4,7 +4,7 @@
          <img src="logo.png" alt="Stallion surveys" style="height: 184px; width: 342px" />
         
         <p>
-            First Name: <input type="text" id="fname" runat="server" placeholder="Text only" style="width: 170px; margin-left: 37px; margin-top: 0" />
+            First Name: <input type="text" id="fname" runat="server" placeholder="Text only" style="width: 170px; margin-left: 40px; margin-top: 0" />
         <asp:RequiredFieldValidator id="fnametextbox" runat="server"
                 ControlToValidate="fname" 
                 ErrorMessage="First name is required!" ForeColor="Red" />
@@ -12,7 +12,7 @@
         <p>
             &nbsp;</p>
         <p>
-             Last Name: <input type="text" id="lname" runat="server" placeholder="text only" style="width: 170px; margin-left: 37px" />
+             Last Name: <input type="text" id="lname" runat="server" placeholder="text only" style="width: 170px; margin-left: 40px" />
             <asp:RequiredFieldValidator ID="lnamereq" runat="server"
                 ControlToValidate="lname" 
                 ErrorMessage="Last name is required!" ForeColor="Red" />
@@ -36,7 +36,7 @@
             1.Which out of the following do you prefer the most to eat?</p>
         <p>
             <br />
-            <select id="preference" runat="server" multiple="true"  class="auto-style1" style="width: 152px; height: 104px">
+            <select id="preference" runat="server" multiple="true"  class="auto-style1" style="width: 155px; height: 104px">
                 <option>KFC</option>
                 <option>Popeyes</option>
                 <option>Mc Donalds</option>
@@ -67,9 +67,9 @@
             <asp:RadioButton ID="RadioButton3" GroupName="visits" runat="server" Text="More than four times" />
           
          </p>
-        <p style="margin-top: 19">
+        <p style="margin-top: 20">
             &nbsp;</p>
-         <p style="margin-top: 19">
+         <p style="margin-top: 20">
            3.Rate your satisfaction out of 5:<br />
          </p>
         <p>
@@ -91,7 +91,7 @@
                 ErrorMessage="please select!" />
             </p>
         <p>
-           5.How would you describe our restaurant to someone who has never been here?<br /><br /><textArea id="description" runat="server" style="width: 581px; height: 100px">
+           5.How would you describe our restaurant to someone who has never been here?<br /><br /><textArea id="description" runat="server" style="width: 590px; height: 100px">
                </textArea>
             &nbsp &nbsp<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
                 ControlToValidate="description" 

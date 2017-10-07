@@ -12,10 +12,6 @@ namespace Assignment_2
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Label1.Text = Session["email"].ToString();
-            Label2.Text = Session["cnumber"].ToString();
-            Label3.Text = Session["recommendation"].ToString();
-            Label4.Text = Session["description"].ToString();
-    }
+        }
     }
 }
