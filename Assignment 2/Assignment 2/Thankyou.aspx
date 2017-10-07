@@ -25,28 +25,11 @@
       <p>
             <asp:Label runat="server" ID="feedbackLabel" />
         </p>
-    <script runat="server">
-        void confirmButton_click(Object s, EventArgs e){
-            bool itemSelected = false;
-           
-            //feedbackLabel.Text = "Your name is: " + fname.Value + lname.Value+ "<br/>";
-            //feedbackLabel.Text += "Your email is: " + email.Value + "<br/>";
-            feedbackLabel.Text += "You use: <br/><ul>";
-           // foreach(ListItem item in preference.Items)
-            {
-               // if (item.Selected)
-                {
-                 //   feedbackLabel.Text += "<li>" + item.Text + "</li>";
-                    itemSelected = true;
-                }
-            }
-            if (!itemSelected)
-            {
-                    feedbackLabel.Text += "<li>nothing</li>";
-            }
-            feedbackLabel.Text += "</ul>";
-         
-        }
-    </script>
+   <h3>Your response:</h3>
+    <asp:Label ID="Label" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
 
 </asp:Content>

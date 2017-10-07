@@ -110,28 +110,6 @@
 
     <p>
 
-    <script runat="server">
-        void confirmButton_click(Object s, EventArgs e){
-            bool itemSelected = false;
-            
-            feedbackLabel.Text += "Your email is: " + email.Value + "<br/>";
-            feedbackLabel.Text += "Your preference: "+ preference.Value + "<br/>";
-            feedbackLabel.Text += "would you recommend it: " + recommendation.Value + "<br/>";
-            foreach(ListItem item in preference.Items)
-            {
-                if (item.Selected)
-                {
-                    feedbackLabel.Text += "<li>" + item.Text + "</li>";
-                    itemSelected = true;
-                }
-            }
-            if (itemSelected)
-            {
-                feedbackLabel.Text += "<li>nothing</li>";
-            }
-            feedbackLabel.Text += "</ul>";
-        }
-        
-    </script>&nbsp;
+&nbsp;
 
     </asp:Content>
